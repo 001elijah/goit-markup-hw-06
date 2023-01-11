@@ -445,11 +445,46 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close>
+            <button class="modal-close-button" data-modal-close>
                 <svg width="11px" height="11px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form action="">
+                <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                <div class="form-group" role="group">
+                    <label class="form-label" for="name">Ім'я</label>
+                    <div class="form-field">
+                        <input class="modal-input" type="text" name="name" id="name" placeholder="Hop Home">
+                        <svg class="modal-form-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="tel">Телефон</label>
+                    <div class="form-field">
+                        <input class="modal-input" type="tel" name="tel" id="tel" placeholder="   ">                        
+                        <svg class="modal-form-icon" width="14" height="14">
+                            <use href="./images/icons.svg#icon-tel"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="mail">Пошта</label>
+                    <div class="form-field">
+                        <input class="modal-input" type="text" name="mail" id="mail" placeholder="   ">
+                        <svg class="modal-form-icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-modal-envelope"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="comment">Коментар</label>
+                    <div class="form-field">
+                        <textarea class="modal-text-area" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                    </div>
+                    <label class="form-label form-checkbox" for="policy">
+                        Погоджуюся з розсилкою та приймаю <a href=""><span class="form-link-policy">Умови договору</span></a>
+                        <input type="checkbox" name="policy" id="policy">
+                    </label>
+                    <button class="hero-button modal-send-button" type="submit">Відправити</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
