@@ -772,14 +772,11 @@ nav a {
     padding-top: 9px;
 }
 
-label {
+.subscribe-header {
     display: flex;
     flex-direction: column;
-
     padding-top: 9px;
-}
 
-.subscribe-header {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -920,12 +917,14 @@ label {
     margin-bottom: 10px;
 }
 
-.form-label {
 
-    top: 0;
-    left: 15px;
-    padding: 0;
-    margin: 0;
+/* Схоже, що це костиль((( */
+.form-field.last-field {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: block;
     margin-bottom: 4px;
 
     font-weight: 400;
@@ -933,35 +932,6 @@ label {
     line-height: 1.17;
 
     letter-spacing: 0.01em;
-}
-
-.form-label.form-checkbox {
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 425px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    font-size: 14px;
-    line-height: 1.71;
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.form-link-policy {
-    display: inline-block;
-}
-
-.modal-form-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
 }
 
 .modal-input {
@@ -974,15 +944,56 @@ label {
 
 }
 
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
 .modal-text-area {
     width: 448px;
     height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    resize: none;
 }
 
-.modal-send-button {
+.form-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.checkbox {
+    background: #212121;
+    margin-right: 8.38px;
+}
+
+.form-link-policy {
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
+
+
+.modal-send-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
