@@ -246,13 +246,13 @@ nav a {
     height: 44px;
     width: 44px;
 
-    transition: background-color 250ms var(--cubic-bezier),
-                color 250ms var(--cubic-bezier);
+    transition: background-color 250ms var(--cubic-bezier);
 
 }
 
 .icon {
     --color3: currentColor;
+    transition: --color3 250ms var(--cubic-bezier);
 }
 
 .employee-social-bg:hover,
@@ -461,6 +461,7 @@ nav a {
     width: 16px;
     height: 12px;
     --color4: currentColor;
+    transition: --color4 250ms var(--cubic-bezier);
 }
 
 .icon-smartphone {
@@ -470,6 +471,7 @@ nav a {
     width: 10px;
     height: 16px;
     --color4: currentColor;
+    transition: --color4 250ms var(--cubic-bezier);
 }
 
 /*--------------------HERO--------------------*/
@@ -668,6 +670,7 @@ nav a {
 
 .card-customer svg {
     --color3: currentColor;
+    transition: --color3 250ms var(--cubic-bezier);
 }
 
 /*--------------------FOOTER--------------------*/
