@@ -891,8 +891,19 @@ nav a {
     cursor: pointer;
 
     border-radius: 50%;
+    color: #000;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: color 250ms var(--cubic-bezier);
+}
+
+.modal-close-button svg {
+    --color3: currentColor;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+    color: var(--accent-color);
 }
 
 .modal-title {
@@ -920,6 +931,10 @@ nav a {
 .form-field {
     position: relative;
     margin-bottom: 10px;
+    
+    color: #000;
+
+    transition: color 250ms var(--cubic-bezier);
 }
 
 
@@ -944,16 +959,23 @@ nav a {
     width: 448px;
     height: 40px;
 
+    font: inherit;
+    padding-left: 42px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+    transition: border 250ms var(--cubic-bezier);
+
 }
 
-.modal-form-icon {
+.form-field .modal-form-icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+
+    --color3: currentColor;
 }
 
 .modal-text-area {
@@ -962,8 +984,15 @@ nav a {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     resize: none;
+
+    font: inherit;
+
+    transition: border 250ms var(--cubic-bezier)
 }
 
 .form-checkbox {
@@ -986,8 +1015,32 @@ nav a {
 }
 
 .checkbox {
-    background: #212121;
-    margin-right: 8.38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.icon-checkbox {
+
+    display: inline-block;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+    border: 2px solid #212121;
+    border-radius: 4px;
+}
+
+.checkbox:checked + .icon-checkbox {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url('../images/icon-check.svg');
+    --color3: var(--accent-color);
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .form-link-policy {
@@ -1002,3 +1055,18 @@ nav a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.form-field:hover,
+.form-field:focus-within {
+    color: var(--accent-color)
+}
+
+.form-field:hover .modal-input,
+.form-field:hover .modal-text-area {
+    border-color: var(--accent-color);
+}
+
+/* .form-field:hover .modal-form-icon,
+.form-field:focus-within .modal-form-icon {
+    --color3: var(--accent-color);
+} */
