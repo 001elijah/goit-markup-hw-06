@@ -682,13 +682,13 @@ nav a {
 /*--------------------FOOTER--------------------*/
 .page-footer {
     background-color: var(--dark-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-padding {
-
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -744,7 +744,7 @@ nav a {
     display: flex;
     justify-content: space-between;
 
-    width: 206px;
+    gap: 10px;
 }
 
 .social-bg {
@@ -773,8 +773,7 @@ nav a {
 }
 
 .footer-social {
-    margin-right: auto;
-    padding-top: 9px;
+
 }
 
 .subscribe-header {
