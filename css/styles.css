@@ -200,6 +200,7 @@ nav a {
 .team-list .card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background: var(--white-text-color);
 }
 
 .card img {
@@ -211,8 +212,6 @@ nav a {
 .card-label {
     padding-top: 30px;
     padding-bottom: 30px;
-
-    background: var(--white-text-color);
 }
 
 .card-label h3 {
@@ -710,8 +709,12 @@ nav a {
 
 
 .entry {
+    display: block;
+    margin-bottom: 9px;
+
     color: var(--white-text-color);
     font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -742,8 +745,6 @@ nav a {
 
 .socials {
     display: flex;
-    justify-content: space-between;
-
     gap: 10px;
 }
 
